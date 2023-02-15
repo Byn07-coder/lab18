@@ -1,0 +1,62 @@
+@media only screen and (max-width:768px) {
+
+.name {
+    display: none;
+}
+.content p {
+    line-height: 1.2;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+ /* Phần Project-charter */
+.project-charter{
+    grid-template-columns: 1fr;
+}
+#goals{
+    grid-row: 1/2;
+}
+#scopes{
+    grid-row: 2/3;
+}
+#team{
+    grid-row: 3/4;
+}
+#primary{
+    grid-row: 4/5;
+}
+#timeline{
+    grid-row: 5/6;
+    grid-column: unset;
+}
+#goals .charter-row, 
+#team .charter-row, 
+#primary .charter-row, 
+#timeline .charter-row {
+    flex-direction: column;
+}
+#team .charter-row .content, #primary .charter-row .content{
+    align-self: flex-start;
+}
+#scopes .charter-content{
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+#timeline .charter-row{
+    gap: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#timeline .charter-row >*{
+    align-self: flex-start;
+}
+#timeline .charter-row .content{
+    width: 100%;
+}
+
+}

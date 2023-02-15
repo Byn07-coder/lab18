@@ -1,0 +1,74 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    [class*="col-"] {
+  width: 100%; }
+
+/* Style Navbar */
+#nav-bar .container {
+    display: block;
+    width: 130px; /*điều chỉnh chiều rộng a của navbar để ra chiều dọc 4 hàng*/
+    text-align: left;
+    padding: 8px;
+}
+            /* loại bỏ các border của navbar */
+#nav-bar .container a:nth-child(2), #nav-bar .container a:nth-child(5) {
+    border-right: none; 
+}
+#nav-bar .container a {
+    border-left: none;
+
+}
+
+.time-du-an p:first-child {
+    margin-left: 20px;
+}
+.content p {
+    line-height: 1.2;
+    font-size: 8px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.link-footer .icon-facebook,
+.link-footer .icon-linkedin,.link-footer .icon-github-circled {
+    font-size: 40%;}
+
+    /* Phần Project-charter */
+    
+    .project-charter{
+        grid-template-columns: 1fr;
+    }
+    #goals{
+        grid-row: 1/2;
+    }
+    #scopes{
+        grid-row: 2/3;
+    }
+    #team{
+        grid-row: 3/4;
+    }
+    #primary{
+        grid-row: 4/5;
+    }
+    #timeline{
+        grid-row: 5/6;
+        grid-column: unset;
+    }
+
+    .charter-row {
+        padding:0;
+    }
+    #team .charter-row .content, 
+    #primary .charter-row .content{
+        align-self: flex-start;
+    }
+    #scopes .charter-content{
+        grid-template-columns: 1fr;
+    }
+    
+  }
